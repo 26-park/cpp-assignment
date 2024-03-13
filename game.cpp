@@ -12,6 +12,7 @@ int game(int answer[],int guess[]){
         for(int j=0;j<3;j++){
             if(answer[j]==guess[i]){
                 ball++;
+                break;
             }
         }
             
@@ -29,6 +30,7 @@ int game(int answer[],int guess[]){
     }
     
     
+
 
 
 }

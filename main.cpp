@@ -1,16 +1,16 @@
 #include<iostream>
 
 int game(int answer[],int guess[]);
-
+int random();
 
 
 int main(){
     int answer[3];
-    int answer1;
+    int answer1=random();
     
 
-    std::cout<<"Enter a answer: ";
-    std::cin >> answer1;
+    std::cout<<"Answer is : "<<answer1<<std::endl;
+    
     for (int i = 2; i >= 0; i--) {
         answer[i] = answer1 % 10;
         answer1 /= 10;
