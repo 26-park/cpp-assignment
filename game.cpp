@@ -1,6 +1,6 @@
 #include<iostream>
 
-int game(int answer[],int guess[]){
+int game(int answer[],int guess[],int size){
     int strike=0;
     int ball=0;
     

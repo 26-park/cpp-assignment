@@ -2,8 +2,13 @@
 #include<cstdlib>
 #include<ctime>
 
-int random(){
+int* randomNumber(){
+    static int arr[3];;
     srand((unsigned int)time(NULL));
-    int a= rand() % 900+100;
-    return a;
+    for(int i=0; i<3; i++){
+        arr[i]=rand() % 10;
+    }
+    
+    
+    return arr;
 }
